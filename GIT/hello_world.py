@@ -1,6 +1,13 @@
+import time
+
+# a simple way to say "Hello world" in Python
+tmps1 = time.process_time()
 print("Hello world")
+tmps2 = time.process_time()
+print("simple way : %f secondes" % (tmps2 - tmps1))
 
 # a complex way to say "Hello world" in Python
+tmps1 = time.process_time()
 x = 0
 while x < 12 :
     if x ==1:
@@ -26,3 +33,5 @@ while x < 12 :
     elif x == 11:
         print("d")
     x = x + 1
+tmps2 = time.process_time()
+print("complicated way : %f secondes" % (tmps2 - tmps1))
